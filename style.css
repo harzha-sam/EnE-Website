@@ -7,7 +7,13 @@
 }
 
 section {
-  height: 100svh;
+  min-height: 90vh;
+}
+
+.services,
+.about,
+.contact {
+  height: auto;
 }
 
 section.light {
@@ -193,7 +199,7 @@ header {
 
 /* SERVICES */
 .services {
-  padding: 100px 200px;
+  padding: 100px 5%;
   background-color: #1C1C1C;
   text-align: center;
 }
@@ -299,7 +305,8 @@ header {
 
 form input,
 form textarea {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   display: block;
   border: 0;
   outline: none;
@@ -556,6 +563,8 @@ footer a {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -596,12 +605,8 @@ footer a {
 
   .services {
     padding: 50px 50px;
-    height: 250vh;
   }
 
-  .about{
-    height: 140vh;
-  }
 
   .about p {
     margin: auto 50px;
@@ -613,7 +618,6 @@ footer a {
 
   .contact {
     padding: 0px 30px;
-    height: 58rem;
 
   }
 
