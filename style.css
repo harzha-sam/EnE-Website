@@ -241,7 +241,9 @@ header {
 }
 
 .about p {
-  margin: auto 250px;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px;
   color: #8f9490;
 }
 
@@ -564,6 +566,11 @@ footer a {
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
+@media (max-width: 768px) {
+
+  .navbar{
+    padding: 0.5rem 1rem;
+  }
 
   .nav-links {
     display: none;
@@ -577,10 +584,6 @@ footer a {
   }
 
   .nav-links.active {
-    display: flex; 
-  }
-
-  .nav-links.show {
     display: flex;
   }
 
@@ -589,46 +592,54 @@ footer a {
     color: #fff;
   }
 
+  .home {
+    padding: 120px 20px;
+  }
+
   .home h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
   }
 
   .home p {
     font-size: 1rem;
-    font-weight: 500;
   }
 
   .home-content {
-    margin: 0 10%;
+    margin: 0;
   }
 
-  .services {
-    padding: 50px 50px;
+  .services,
+  .about,
+  .contact,
+  .review {
+    height: auto;
+    padding: 100px 20px;
   }
-
 
   .about p {
-    margin: auto 50px;
-  }
-
-  .review {
-    padding: 85px 20px 0;
-  }
-
-  .contact {
-    padding: 0px 30px;
-
+    margin: auto;
+    padding: 0 10px;
   }
 
   form input,
   form textarea {
-    width: 350px;
-    padding: 10px;
+    width: 100%;
+    max-width: 100%;
   }
 
-  footer{
-    height: 100px;
-    padding: 10px 20px;
+  .owner-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
   }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+}
 }
