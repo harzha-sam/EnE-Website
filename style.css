@@ -599,6 +599,10 @@ footer a {
     height: 250vh;
   }
 
+  .about{
+    height: 110vh;
+  }
+
   .about p {
     margin: auto 50px;
   }
